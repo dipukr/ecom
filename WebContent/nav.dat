@@ -1,0 +1,10 @@
+<ul class="navbar">
+	<li><a href="index.jsp">Home</a></li>
+	<li><a href="cart.jsp">Cart</a></li>
+	<%if (user == null) {%>
+	<li><a href="login.jsp">Login</a></li>
+	<%} else {%>
+	<li><a href="orders.jsp">Orders</a></li>
+	<li><a href="userLogout">Logout</a></li>
+	<%}%>
+</ul> <br>
